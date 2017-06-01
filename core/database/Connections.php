@@ -14,7 +14,10 @@ class Connection
 				$config['options']
 			);
 		} catch (PDOException $e) {
-			dd($e);
+			echo '<pre>';
+		    var_dump($e);
+		    echo '</pre>';
+		    die($e);
 		}
 	}
 }
